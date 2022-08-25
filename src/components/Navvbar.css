@@ -1,0 +1,40 @@
+.link {
+    display: inline-block;
+    margin-block: 2px;
+    color: white;
+    text-decoration: none;
+    position: relative;
+}
+.link::after {
+    color: grey;
+    content: " ";
+    width: 100%;
+    height: 1px;
+    background-color: red;
+    border-radius: 4px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.25s ease;
+}
+.link:hover::after {
+    transform: scaleX(1);
+}
+.link:hover {
+    color: white;
+}
+.link2{
+    padding: 10px;
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    position: relative;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+.link2:hover{
+    background-color: white;
+    color: black;
+}
